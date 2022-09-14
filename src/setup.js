@@ -5,6 +5,7 @@ import * as Constants from './constants';
 import xtend from 'xtend';
 
 export default function(ctx) {
+  ctx.events = events(ctx);
 
   let controlContainer = null;
   let mapLoadedInterval = null;
